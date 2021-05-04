@@ -1,0 +1,67 @@
+/* global  */
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+:root {
+  --brand-color: orange;
+}
+body {
+  font-family: "Itim", cursive;
+  background-color: #f2f3f7;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* top header  */
+.top_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header_icon {
+  width: 20px;
+  display: inline-block;
+}
+.search {
+  position: relative;
+}
+.search input {
+  border-radius: 25px;
+}
+.search_icon_pre_div {
+  position: absolute;
+  top: 0px;
+  right: 13px;
+  background: var(--brand-color);
+  height: 38px;
+  width: 38px;
+  border-radius: 0 25px 25px 0;
+  overflow: hidden;
+}
+.search_icon {
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 8px;
+  color: white;
+}
+.top_header_right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_header_right a {
+  white-space: nowrap;
+}
