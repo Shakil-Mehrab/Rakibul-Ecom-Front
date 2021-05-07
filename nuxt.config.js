@@ -16,10 +16,17 @@ export default {
 
   css: [
     "@/assets/css/bootstrap/bootstrap.css",
-    "@/assets/css/style.css"
+    "@/assets/css/style.css",
+    "@/assets/css/mobilemenu/mobilemenu.css"
+
 ],
-  js: ["@/assets/css/bootstrap/bootstrap.js"],
-  plugins: [],
+  js: [],
+  plugins: [
+    '@/plugins/VueFragment',
+    '@/plugins/VueObserveVisibility',
+    { src: '~/plugins/VueCarousel.js', mode: 'client' },
+
+  ],
 
   components: true,
 

@@ -1,24 +1,30 @@
 <template>
   <fixed-header :threshold="100">
-    <div class="bg-white shadow-sm navbar">
-      <TopHeader />
-      <hr />
-      <div class="remove_lowheader_from_top_fixed">
-        <!-- <LowerHeader /> -->
-      </div>
-    </div>
+    <header class="bg-white shadow-sm navbar">
+        <div class="container-fluid header_full">
+          <TopHeader />
+        </div>
+        <div class="header_full remove_lowheader_from_fixed" >
+            <hr>
+        </div>
+        <div class="low_head_back_img">
+          <div class="container-fluid low_head_back_img remove_lowheader_from_fixed ">
+          <LowerHeader />
+        </div>
+        </div>
+    </header>
   </fixed-header>
 </template>
 <script>
-// import FixedHeader from "vue-fixed-header";
+import FixedHeader from "vue-fixed-header";
 import TopHeader from "@/layouts/partials/header/top/TopHeader";
 import LowerHeader from "@/layouts/partials/header/lower/LowerHeader";
 export default {
   components: {
     TopHeader,
     LowerHeader,
-    // FixedHeader
-  }
+    FixedHeader,
+  },
 };
 </script>
 <style>
@@ -29,9 +35,9 @@ export default {
     top: 0;
     width: 100vw;
     z-index: 9999;
-  }
+  } 
   /* by shakil */
-  .navbar.vue-fixed-header--isFixed .remove_lowheader_from_top_fixed {
+  .navbar.vue-fixed-header--isFixed .remove_lowheader_from_fixed {
     display: none;
   }
 }

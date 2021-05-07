@@ -1,16 +1,13 @@
 <template>
   <fragment>
-    <!-- <div
-      class="border-t-2 border-b-2 border-l-2 border-customcolor-300 rounded-l-full overflow-hidden h-6 sm:h-10 absolute left-0"
+    <div
+      class="search_select_pre_div"
     >
-      <div
-        class="px-4 sm:pt-2  bg-white border-r border-gray-400 h-full text-sm font-semibold"
-      >
-        <select name="userType" id="userType" class="focus:outline-none">
+        <select name="userType" id="userType">
           <option value="1" class="whitespace-wrap">
             <span>Products</span>
             <svg
-              class="w-4 inline-block"
+              class="search_icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -38,8 +35,7 @@
             </svg>
           </option>
         </select>
-      </div>
-    </div> -->
+    </div>
     <input type="search" class="form-control" />
     <div class="search_icon_pre_div">
       <svg
@@ -60,6 +56,7 @@
   </fragment>
 </template>
 <script>
+
 export default {
   data() {
     return {};
