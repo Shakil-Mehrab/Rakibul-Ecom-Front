@@ -3,20 +3,15 @@
     <br />
     <div class="container mx-auto bg-white shadow-sm">
       <div class="row p-2">
-        <div class="col-md-3">
-          <div
-            class=""
-          >
-            My Markets
-          </div>
-          <!-- <RootCategory :categories="selectedCategories" /> -->
+        <div class="col-md-3 col-sm-3">
+          <MyMarket />
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 col-sm-9">
           <div class="row">
-           <div class="col-md-8">
+           <div class="col-md-8 col-sm-12">
               <MainSlider />
            </div>
-           <div class="col-md-4">
+           <div class="col-md-4 col-sm-12">
                 <TrendingConsumer
             />
            </div>
@@ -92,7 +87,7 @@
   </div>
 </template>
 <script>
-// import RootCategory from "@/layouts/partials/header/lower/RootCategory";
+import MyMarket from "@/components/indexPage/topSection/MyMarket";
 import MainSlider from "@/components/indexPage/topSection/MainSlider";
 import TrendingConsumer from "@/components/indexPage/topSection/TrendingConsumer";
 // import NewArrival from "@/components/indexPage/NewArrival";
@@ -105,7 +100,7 @@ import { mapGetters } from "vuex";
 
 export default {
   components: {
-    // RootCategory,
+    MyMarket,
     MainSlider,
     TrendingConsumer,
     // NewArrival,

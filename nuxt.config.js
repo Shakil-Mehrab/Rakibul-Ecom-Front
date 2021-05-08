@@ -17,7 +17,15 @@ export default {
   css: [
     "@/assets/css/bootstrap/bootstrap.css",
     "@/assets/css/style.css",
-    "@/assets/css/mobilemenu/mobilemenu.css"
+    "@/assets/css/header/topheader.css",
+    "@/assets/css/header/lowerheader.css",
+    "@/assets/css/index/index.css",
+    "@/assets/css/footer/footer.css",
+    "@/assets/css/mobilemenu/mobilemenu.css",
+    "@/assets/css/mediascreen/mediascreen.css",
+
+
+
 
 ],
   js: [],

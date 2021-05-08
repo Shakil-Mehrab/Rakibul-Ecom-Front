@@ -1,0 +1,30 @@
+/* index  */
+/* trendig  */
+.trending_heading {
+  background-color: var(--brand-color);
+  padding: 2px;
+  border-radius: 2px;
+  text-align: center;
+  color: white;
+}
+.trending ul li {
+  border-bottom: var(--fine-border);
+}
+.trending ul li a {
+  font-size: 15px;
+}
+.trending ul li a span {
+  background-color: var(--brand-color);
+  padding: 2px 4px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  width: 85px;
+  height: 20px;
+  margin-top: auto;
+}
+.trending ul li a span:hover {
+  transform: scale(1.1);
+  transition: var(--transition);
+}

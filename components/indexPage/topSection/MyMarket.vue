@@ -6,9 +6,9 @@
       once: true
     }"
   >
-      <h6 class="trending_heading">Trending Consumer Electronics</h6>
+      <h6 class="trending_heading">My Market</h6>
     <div>
-      <ul class="trending_ul">
+      <ul class="mymarket_ul">
         <li v-for="n in 2"
         :key="n.id"
         >
