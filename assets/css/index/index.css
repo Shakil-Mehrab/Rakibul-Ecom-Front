@@ -7,8 +7,9 @@
   text-align: center;
   color: white;
 }
-.trending ul li {
+.trending ul li:nth-child(1) {
   border-bottom: var(--fine-border);
+  margin-bottom: 4px;
 }
 .trending ul li a {
   font-size: 15px;
@@ -27,4 +28,22 @@
 .trending ul li a span:hover {
   transform: scale(1.1);
   transition: var(--transition);
+}
+/* new arriaval  */
+.new_arrival {
+  background: white;
+  padding: 5px;
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+.new_arrival ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* slider  */
+.product_attribute a {
+  color: var(--brand-color);
+}
+.product_attribute a:hover {
+  color: var(--extra-violet);
 }

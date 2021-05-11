@@ -7,8 +7,8 @@
         <div class="header_full remove_lowheader_from_fixed" >
             <hr>
         </div>
-        <div class="low_head_back_img">
-          <div class="container-fluid low_head_back_img remove_lowheader_from_fixed ">
+        <div class="low_head_back_img remove_lowheader_from_fixed">
+          <div class="container-fluid">
           <LowerHeader />
         </div>
         </div>

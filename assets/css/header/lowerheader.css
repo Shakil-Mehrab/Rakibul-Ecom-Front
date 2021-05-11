@@ -2,9 +2,9 @@
 .low_head_back_img {
   width: 100%;
   background-image: url("@/assets/images/lightpinkimg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   height: 50px;
   display: flex;
 }
@@ -43,7 +43,7 @@
   margin-left: 10px;
 }
 .root_category ul li:hover {
-  color: var(--brand-color);
+  color: var(--extra-hover-color);
 }
 .root_category ul li a {
   display: flex;
@@ -95,6 +95,31 @@
 .lower_info_right_end {
   display: flex;
   justify-content: flex-end;
+}
+.currency {
+  position: relative;
+  cursor: pointer;
+  color: white;
+}
+.currency ul {
+  position: absolute;
+  top: 21px;
+  display: none;
+  background-color: var(--brand-color);
+  border-radius: 4px;
+  padding: 4px;
+  width: 133px;
+  left: -21px;
+}
+.currency:hover ul {
+  display: block;
+}
+.currency:hover ul li a {
+  font-size: 16px;
+  color: white;
+}
+.currency ul li a:hover {
+  color: var(--extra-violet);
 }
 .mobile_menu_pre_div {
   display: flex;

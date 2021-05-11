@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div v-if="subCategory==category">
     <div class="sub_category">
       <div class="row">
         <div class="col-md-6" v-for="m in 4" :key="m">

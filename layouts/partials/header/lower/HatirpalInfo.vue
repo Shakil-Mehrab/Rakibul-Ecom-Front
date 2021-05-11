@@ -26,9 +26,9 @@
         <li class="px-2 text-sm font-semibold">
           <a href="">Get The Help</a>
         </li>
-        <li class="pl-2 font-semibold">
-          <a href="">
-            <span class="text-sm">English-BDT</span>
+        <li class="currency">
+          
+            <span class="text-sm">Currency</span>
             <svg
               class="category_menu_icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,11 @@
                 d="M19 9l-7 7-7-7"
               />
             </svg>
-          </a>
+        
+          <ul>
+            <li><a href="">Currency-US($)</a></li>
+            <li><a href="">Currency-BDT</a></li>
+          </ul>
         </li>
       </ul>
     </div>

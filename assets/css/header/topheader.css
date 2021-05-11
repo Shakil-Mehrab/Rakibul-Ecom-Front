@@ -17,6 +17,7 @@
 }
 .search input {
   border-radius: 25px;
+  padding-left: 110px;
 }
 .search_select_pre_div {
   position: absolute;

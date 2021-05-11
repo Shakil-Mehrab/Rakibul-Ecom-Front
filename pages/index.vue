@@ -21,23 +21,21 @@
     </div>
     <br />
     <div class="container mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <!-- <NewArrival /> -->
-        <!-- <NewArrival /> -->
-        <!-- <NewArrival /> -->
+      <div class="row">
+        <NewArrival v-for="n in 3" :key="n"/>
       </div>
     </div>
-    <br />
-    <div class="container mx-auto sm:flex bg-white">
-      <div class="w-full overflow-hidden  sm:w-2/12 relative">
+    <!-- <br /> -->
+    <div class="container mx-auto">
+      <div class="row">
         <!-- <CategoryHeading title="Electronics" /> -->
       </div>
-      <div class="w-full sm:w-10/12">
-        <!-- <SlideSectionOne
+      <div class="row">
+        <SlideSectionOne
           endpoints="products?categories=richie&per-page=12"
           :short_des="true"
           :skeleton="6"
-        /> -->
+        />
       </div>
     </div>
     <div class="md:mx-10">
@@ -90,10 +88,10 @@
 import MyMarket from "@/components/indexPage/topSection/MyMarket";
 import MainSlider from "@/components/indexPage/topSection/MainSlider";
 import TrendingConsumer from "@/components/indexPage/topSection/TrendingConsumer";
-// import NewArrival from "@/components/indexPage/NewArrival";
+import NewArrival from "@/components/indexPage/NewArrival";
 // import CategoryHeading from "@/components/indexPage/Heading/CategoryHeading";
 // import CategorySection from "@/components/indexPage/CategorySection";
-// import SlideSectionOne from "@/components/indexPage/ProductSlide/SlideSectionOne";
+import SlideSectionOne from "@/components/indexPage/productSlide/SlideSectionOne";
 // import JustForYou from "@/components/indexPage/JustForYou";
 // import SupplierRegion from "@/components/indexPage/SupplierRegion";
 import { mapGetters } from "vuex";
@@ -103,10 +101,10 @@ export default {
     MyMarket,
     MainSlider,
     TrendingConsumer,
-    // NewArrival,
+    NewArrival,
     // CategorySection,
     // CategoryHeading,
-    // SlideSectionOne,
+    SlideSectionOne,
     // JustForYou,
     // SupplierRegion
   },
