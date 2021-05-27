@@ -8,29 +8,27 @@
         </div>
         <div class="col-md-9 col-sm-9">
           <div class="row">
-           <div class="col-md-8 col-sm-12">
+            <div class="col-md-8 col-sm-12">
               <MainSlider />
-           </div>
-           <div class="col-md-4 col-sm-12">
-                <TrendingConsumer
-            />
-           </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <TrendingConsumer />
+            </div>
           </div>
         </div>
       </div>
     </div>
     <br />
     <div class="container mx-auto">
-      <div class="row">
-        <NewArrival v-for="n in 3" :key="n"/>
+      <div class="row newarrival_row">
+        <NewArrival v-for="n in 3" :key="n" />
       </div>
     </div>
-    <!-- <br /> -->
     <div class="container mx-auto">
-      <div class="row">
-        <!-- <CategoryHeading title="Electronics" /> -->
+      <div class="row bg-white">
+        <CategoryHeading title="Electronics" />
       </div>
-      <div class="row">
+      <div class="row bg-white">
         <SlideSectionOne
           endpoints="products?categories=richie&per-page=12"
           :short_des="true"
@@ -38,45 +36,43 @@
         />
       </div>
     </div>
-    <div class="md:mx-10">
-      <div class="flex justify-between items-center py-2 w-full">
-        <div
-          class="text-2xl font-bold whitespace-no-wrap mr-2 text-customcolor-400"
-        >
-          Choose Your Product
-        </div>
-        <div class="rounded-md text-sm font-bold">
-          <a href="" class="text-customcolor-200 hover:text-customcolor-300">
-            See All Products
-            <i class="fas fa-arrow-right text-sm"></i>
-          </a>
-        </div>
-      </div>
-      <!-- <SlideSectionOne
-        endpoints="products?categories=richie&per-page=12"
-        :short_des="true"
-        :skeleton="10"
-      /> -->
-    </div>
     <br />
     <div class="container mx-auto">
-      <div class="flex justify-between items-center py-2">
-        <div
-          class="text-2xl font-bold whitespace-no-wrap mr-2 text-customcolor-400"
+      <div class="row bg-white">
+        <div class="col-md-3 left_heading" style="padding: 0; overflow: hidden;position:relative">
+           <img
+            src="https://img.alicdn.com/tfs/TB1J5jev7voK1RjSZPfXXXPKFXa-300-320.png"
+            alt=""
+            width="100%" height="100%"
+          />
+           
+          <div class="left_category_heading">
+            <h5>Jwellery</h5>
+             <a href="" class=""> See All Products <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          style="width:14px"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          JUST FOR YOU
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M14 5l7 7m0 0l-7 7m7-7H3"
+          />
+        </svg></a>
+          </div>
         </div>
-        <div class="border-b-4 border-gray-600 w-full rounded-md"></div>
+        <div class="col-md-9">
+          <SlideSectionOne
+            endpoints="products?categories=richie&per-page=12"
+            :short_des="true"
+            :skeleton="6"
+          />
+        </div>
       </div>
-      <!-- <JustForYou
-        endpoints="products?categories=richie&per-page=12"
-        :short_des="true"
-        :skeleton="10"
-      /> -->
-    </div>
-    <br />
-    <div class="md:mx-10">
-      <!-- <SlideSectionOne /> -->
     </div>
     <br />
     <div class="container mx-auto">
@@ -89,7 +85,7 @@ import MyMarket from "@/components/indexPage/topSection/MyMarket";
 import MainSlider from "@/components/indexPage/topSection/MainSlider";
 import TrendingConsumer from "@/components/indexPage/topSection/TrendingConsumer";
 import NewArrival from "@/components/indexPage/NewArrival";
-// import CategoryHeading from "@/components/indexPage/Heading/CategoryHeading";
+import CategoryHeading from "@/components/indexPage/Heading/CategoryHeading";
 // import CategorySection from "@/components/indexPage/CategorySection";
 import SlideSectionOne from "@/components/indexPage/productSlide/SlideSectionOne";
 // import JustForYou from "@/components/indexPage/JustForYou";
@@ -103,7 +99,7 @@ export default {
     TrendingConsumer,
     NewArrival,
     // CategorySection,
-    // CategoryHeading,
+    CategoryHeading,
     SlideSectionOne,
     // JustForYou,
     // SupplierRegion
@@ -111,7 +107,7 @@ export default {
   computed: {
     ...mapGetters({
       // selectedCategories: "selectedCategories"
-    })
+    }),
   },
   async asyncData({ app }) {
     // let response = await app.$axios.$get("products");
@@ -119,6 +115,6 @@ export default {
     return {
       // products: response.data
     };
-  }
+  },
 };
 </script>

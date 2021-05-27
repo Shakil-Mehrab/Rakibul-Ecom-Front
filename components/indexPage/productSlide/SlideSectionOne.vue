@@ -4,13 +4,18 @@
       callback: showProductsNow,
       once: true,
     }"
-    class="col-md-12 bg-white"
+    class="col-md-12"
   >
     <template>
       <client-only>
         <carousel
           class="product-slider"
-          :perPageCustom="[[350, 3], [768, 5],[992, 6], [1200, 8] ]"
+          :perPageCustom="[
+            [350, 3],
+            [768, 5],
+            [992, 6],
+            [1200, 8],
+          ]"
           :loop="true"
           :navigationEnabled="true"
         >
@@ -29,8 +34,8 @@
                 /> -->
               </nuxt-link>
               <div class="product_attribute">
-                <p class="mt-2 mb-1">300 BDT</p>
-                <a href=""><h6 class="">This is product name</h6></a>
+                <p class="mt-2 mb-1">300 BDTsw</p>
+                <nuxt-link :to="link('detail')" exact><h6 class="">This is product name</h6></nuxt-link>
                 <p class="">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.....
                 </p>
@@ -93,10 +98,10 @@ export default {
     },
     link(arg) {
       return {
-        name: "products-slug",
-        params: {
-          slug: arg.slug,
-        },
+        name: "product-slug",
+        // params: {
+        //   slug: arg.slug,
+        // },
       };
     },
   },
@@ -115,7 +120,7 @@ export default {
   color: #333;
 }
 .product-slider .VueCarousel-navigation-prev {
-  left: 35px;
+  left: 20px;
   background: #e7e9ec;
   border-radius: 3px;
   border-color: #adb1b8 #a2a6ac #8d9096;
@@ -123,7 +128,7 @@ export default {
   border-width: 1px;
 }
 .product-slider .VueCarousel-navigation-next {
-  right: 35px;
+  right: 20px;
   background: #e7e9ec;
   border-radius: 3px;
   border-color: #adb1b8 #a2a6ac #8d9096;

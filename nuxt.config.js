@@ -33,6 +33,7 @@ export default {
     '@/plugins/VueFragment',
     '@/plugins/VueObserveVisibility',
     { src: '~/plugins/VueCarousel.js', mode: 'client' },
+    '@/plugins/VueZoomOnHover',
 
   ],
 

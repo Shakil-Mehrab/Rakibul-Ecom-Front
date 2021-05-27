@@ -28,6 +28,9 @@ export default {
 };
 </script>
 <style>
+.navbar{
+  padding-bottom: 0;
+}
 @media only screen and (min-width: 768px) {
   .navbar.vue-fixed-header--isFixed {
     position: fixed;

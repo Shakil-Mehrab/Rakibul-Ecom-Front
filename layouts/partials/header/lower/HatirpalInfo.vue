@@ -28,7 +28,7 @@
         </li>
         <li class="currency">
           
-            <span class="text-sm">Currency</span>
+            <span class="">Currency</span>
             <svg
               class="category_menu_icon"
               xmlns="http://www.w3.org/2000/svg"

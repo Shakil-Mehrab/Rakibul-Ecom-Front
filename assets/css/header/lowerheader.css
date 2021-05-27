@@ -1,12 +1,14 @@
 /* lower header  */
 .low_head_back_img {
   width: 100%;
-  background-image: url("@/assets/images/lightpinkimg.jpg");
+  /* background-image: url("@/assets/images/lightpinkimg.jpg"); */
   /* background-position: center; */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
+  background-color: var(--brand-color);
   height: 50px;
   display: flex;
+  align-items: center;
 }
 .lower_header {
   width: 100%;
@@ -20,6 +22,9 @@
   display: flex;
   align-items: center;
   color: white;
+}
+.category_menu_option:hover {
+  color: var(--extra-violet);
 }
 .category_menu_icon {
   width: 18px;
@@ -43,7 +48,7 @@
   margin-left: 10px;
 }
 .root_category ul li:hover {
-  color: var(--extra-hover-color);
+  color: var(--brand-color);
 }
 .root_category ul li a {
   display: flex;
@@ -90,7 +95,7 @@
 }
 .lower_info_ul li:hover a {
   font-size: 18px;
-  color: var(--brand-color);
+  color: var(--extra-violet);
 }
 .lower_info_right_end {
   display: flex;
@@ -105,7 +110,7 @@
   position: absolute;
   top: 21px;
   display: none;
-  background-color: var(--brand-color);
+  background-color: white;
   border-radius: 4px;
   padding: 4px;
   width: 133px;
@@ -116,10 +121,13 @@
 }
 .currency:hover ul li a {
   font-size: 16px;
-  color: white;
+  color: var(--brand-color);
 }
 .currency ul li a:hover {
   color: var(--extra-violet);
+}
+.currency span {
+  font-size: 16px;
 }
 .mobile_menu_pre_div {
   display: flex;

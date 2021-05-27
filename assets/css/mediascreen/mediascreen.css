@@ -22,6 +22,16 @@
   .trending .trending_ul {
     display: flex;
   }
+  .left_heading {
+    height: 40px;
+  }
+  .left_category_heading h5 {
+    margin-left: 5px;
+  }
+  .left_category_heading a {
+    margin-right: 5px;
+    bottom: 8px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .trending .mymarket_ul {
