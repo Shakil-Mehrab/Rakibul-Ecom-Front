@@ -10,7 +10,9 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" }
     ],
-    script: [],
+    script: [
+      {src:'https://kit.fontawesome.com/bb2f33706c.js'}
+    ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
@@ -20,13 +22,11 @@ export default {
     "@/assets/css/header/topheader.css",
     "@/assets/css/header/lowerheader.css",
     "@/assets/css/index/index.css",
+    "@/assets/css/detail/detail.css",
+    "@/assets/css/cart/cart.css",
     "@/assets/css/footer/footer.css",
     "@/assets/css/mobilemenu/mobilemenu.css",
     "@/assets/css/mediascreen/mediascreen.css",
-
-
-
-
 ],
   js: [],
   plugins: [

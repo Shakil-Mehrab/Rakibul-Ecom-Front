@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-5">
-    <div class="relative z-40">
-      <zoom-on-hover
+  <div>
+    <div class="relative">
+      <!-- <zoom-on-hover
         v-if="idOfImage"
         :img-normal="idOfImage"
         :img-zoom="idOfImage"
@@ -10,7 +10,7 @@
         @loaded="onload"
         @resized="onresize"
       >
-      </zoom-on-hover>
+      </zoom-on-hover> -->
       <div class="absolute bottom-0 left-0 right-0" align="center">
         <!-- <span class="text-sm text-customcolor-300">{{ serial }}/7</span> -->
       </div>
@@ -27,7 +27,7 @@
           <slide v-for="n in 10" :key="n">
             <div class="mx-1">
               <a href="#" @mouseover="selectImage(n,1)">
-                <img :src="idOfImage" alt="" />
+                <img :src="idOfImage" width="100%" alt="" />
               </a>
             </div>
           </slide>
@@ -59,7 +59,7 @@ export default {
       this.serial = serial;
     }
   }
-};
+}
 </script>
 <style>
 .product-detail-slider .VueCarousel-navigation {
@@ -75,7 +75,7 @@ export default {
 }
 .product-detail-slider .VueCarousel-navigation-prev {
   border: none !important;
-  left: 24px;
+  left: 24px!important;
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -93,4 +93,4 @@ export default {
 .product-detail-slider .VueCarousel-dot-container {
   display: none !important;
 }
-</style
+</style>

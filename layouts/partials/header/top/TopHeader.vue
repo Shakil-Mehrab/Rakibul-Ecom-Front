@@ -71,7 +71,7 @@
             </a>
           </li>
           <li class="mx-2">
-            <a href="">
+            <a href="cart/cart" exact>
               <svg
                 class="header_icon"
                 xmlns="http://www.w3.org/2000/svg"

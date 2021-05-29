@@ -38,9 +38,8 @@
 }
 .new_arrival {
   background: white;
-  padding: 5px;
+  padding: 5px 5px 0 5px;
   border-radius: 2px;
-  margin-bottom: 18px;
 }
 .new_arrival ul {
   display: flex;
@@ -65,15 +64,7 @@
   display: flex;
   align-items: center;
 }
-.category_heading .see_all a {
-  color: white;
-  background: var(--brand-color);
-  padding: 0 4px;
-  border-radius: 20px;
-}
-.category_heading:hover .see_all a {
-  color: var(--extra-violet);
-}
+
 /* category left heading  */
 
 .left_category_heading h5 {

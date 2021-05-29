@@ -19,12 +19,13 @@
       </div>
     </div>
     <br />
-    <div class="container mx-auto">
+    <div class="container mx-auto shadow-sm">
       <div class="row newarrival_row">
         <NewArrival v-for="n in 3" :key="n" />
       </div>
     </div>
-    <div class="container mx-auto">
+    <br>
+    <div class="container mx-auto shadow-sm">
       <div class="row bg-white">
         <CategoryHeading title="Electronics" />
       </div>
@@ -37,7 +38,7 @@
       </div>
     </div>
     <br />
-    <div class="container mx-auto">
+    <div class="container mx-auto shadow-sm">
       <div class="row bg-white">
         <div class="col-md-3 left_heading" style="padding: 0; overflow: hidden;position:relative">
            <img

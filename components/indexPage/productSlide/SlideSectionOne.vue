@@ -35,7 +35,7 @@
               </nuxt-link>
               <div class="product_attribute">
                 <p class="mt-2 mb-1">300 BDTsw</p>
-                <nuxt-link :to="link('detail')" exact><h6 class="">This is product name</h6></nuxt-link>
+                <a href="product/_slug" exact><h6 class="">This is product name</h6></a>
                 <p class="">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.....
                 </p>
@@ -66,12 +66,12 @@ export default {
   },
   props: {
     endpoints: {
-      required: true,
+      required: false,
       type: String,
       default: "news?per-page=9",
     },
     short_des: {
-      required: true,
+      required: false,
       type: Boolean,
       default: false,
     },
