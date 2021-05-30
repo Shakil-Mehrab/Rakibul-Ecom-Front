@@ -5,7 +5,6 @@
           <svg
             style="width: 12px"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -20,7 +19,7 @@
           New Arrivals
         </h6>
       <ul>
-        <li v-for="m in 3" :key="m">
+        <li v-for="m in 3" :key="m" class="hover_shadow">
           <a href="">
             <!-- <img src="//i.alicdn.com/img/imgextra/i1/O1CN01ypfQ2q1zTydNAQ99D_!!6000000006716-0-tps-1000-1000.jpg_100x100.jpg" class="w-full transform hover:scale-110 transition ease-out duration-1000" alt=""> -->
             <!-- <img :src="art.image" alt="Awesome Image" /> -->
@@ -39,7 +38,7 @@
                 backgroundSize: 'contain',
               }"
             ></div>
-            <div class="text-center">
+            <div class="text-center px-1">
               <p class="mb-1">120 BDT</p>
               <h6 >Trending Now</h6>
             </div>

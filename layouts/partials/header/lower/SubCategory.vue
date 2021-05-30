@@ -26,9 +26,9 @@
           <div class="child_category">
             <ul>
               <li class="" v-for="n in 5" :key="n">
-                <nuxt-link to="" exact target="_blank" class="">
-                  This is about
-                </nuxt-link>
+                <a href="category/category" exact target="_blank" class="">
+                  This is aboute
+                </a>
               </li>
             </ul>
           </div>

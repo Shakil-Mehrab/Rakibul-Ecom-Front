@@ -15,7 +15,7 @@
           <a href="" class="">
               <h6>Ladies health monitoring smartwatch</h6>
               <div style="display:flex">
-                <span>Source Now</span
+                <span class="brand_button">Source Now</span
               >
               <img
                 src="//i.alicdn.com/img/imgextra/i1/O1CN01ypfQ2q1zTydNAQ99D_!!6000000006716-0-tps-1000-1000.jpg_100x100.jpg"

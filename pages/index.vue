@@ -28,8 +28,6 @@
     <div class="container mx-auto shadow-sm">
       <div class="row bg-white">
         <CategoryHeading title="Electronics" />
-      </div>
-      <div class="row bg-white">
         <SlideSectionOne
           endpoints="products?categories=richie&per-page=12"
           :short_des="true"
@@ -40,32 +38,7 @@
     <br />
     <div class="container mx-auto shadow-sm">
       <div class="row bg-white">
-        <div class="col-md-3 left_heading" style="padding: 0; overflow: hidden;position:relative">
-           <img
-            src="https://img.alicdn.com/tfs/TB1J5jev7voK1RjSZPfXXXPKFXa-300-320.png"
-            alt=""
-            width="100%" height="100%"
-          />
-           
-          <div class="left_category_heading">
-            <h5>Jwellery</h5>
-             <a href="" class=""> See All Products <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          style="width:14px"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M14 5l7 7m0 0l-7 7m7-7H3"
-          />
-        </svg></a>
-          </div>
-        </div>
+        <CategoryHeadingLeft title="Electronics" />
         <div class="col-md-9">
           <SlideSectionOne
             endpoints="products?categories=richie&per-page=12"
@@ -87,6 +60,7 @@ import MainSlider from "@/components/indexPage/topSection/MainSlider";
 import TrendingConsumer from "@/components/indexPage/topSection/TrendingConsumer";
 import NewArrival from "@/components/indexPage/NewArrival";
 import CategoryHeading from "@/components/indexPage/Heading/CategoryHeading";
+import CategoryHeadingLeft from "@/components/indexPage/Heading/CategoryHeadingLeft";
 // import CategorySection from "@/components/indexPage/CategorySection";
 import SlideSectionOne from "@/components/indexPage/productSlide/SlideSectionOne";
 // import JustForYou from "@/components/indexPage/JustForYou";
@@ -101,6 +75,7 @@ export default {
     NewArrival,
     // CategorySection,
     CategoryHeading,
+    CategoryHeadingLeft,
     SlideSectionOne,
     // JustForYou,
     // SupplierRegion

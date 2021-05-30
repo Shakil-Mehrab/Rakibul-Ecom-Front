@@ -6,7 +6,7 @@
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   background-color: var(--brand-color);
-  height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
 }
@@ -36,7 +36,7 @@
 .root_category {
   position: absolute;
   left: 1px;
-  top: 45px;
+  top: 40px;
   background: white;
   padding: 5px 10px;
   z-index: 9999;
@@ -94,7 +94,7 @@
   color: white;
 }
 .lower_info_ul li:hover a {
-  font-size: 18px;
+  font-size: 16.2px;
   color: var(--extra-violet);
 }
 .lower_info_right_end {

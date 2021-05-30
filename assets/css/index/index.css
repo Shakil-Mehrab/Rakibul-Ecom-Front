@@ -15,11 +15,9 @@
   font-size: 15px;
 }
 .trending ul li a span {
-  background-color: var(--brand-color);
   padding: 2px 4px;
   border-radius: 10px;
   text-align: center;
-  color: white;
   font-size: 12px;
   width: 85px;
   height: 20px;
@@ -27,7 +25,6 @@
 }
 .trending ul li a span:hover {
   transform: scale(1.1);
-  transition: var(--transition);
 }
 /* new arriaval  */
 .newarrival_row .col-md-4:first-child {
@@ -52,6 +49,9 @@
 .product_attribute a:hover {
   color: var(--extra-violet);
 }
+.slide_content {
+  padding: 1px 4px;
+}
 /* category heading  */
 .category_heading {
   display: flex;
@@ -66,7 +66,11 @@
 }
 
 /* category left heading  */
-
+.left_heading {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
 .left_category_heading h5 {
   position: absolute;
   top: 10px;
@@ -83,10 +87,6 @@
   right: 0;
   margin: auto;
   width: 130px;
-  background-color: var(--brand-color);
-  padding: 0 4px;
-  border-radius: 20px;
-  color: white;
 }
 .left_category_heading:hover a {
   color: var(--extra-violet);

@@ -20,10 +20,10 @@
           :navigationEnabled="true"
         >
           <slide v-for="n in 20" :key="n">
-            <div class="p-2" style="">
+            <div class="slide_content hover_shadow">
               <nuxt-link to="" exact>
                 <img
-                  src="https://img.alicdn.com/imgextra/i1/O1CN01r7pL1J1DYSxOOPt7s_!!6000000000228-2-tps-990-400.png"
+                  src="https://picsum.photos/seed/picsum/200/300"
                   width="100%"
                   alt=""
                 />

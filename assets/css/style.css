@@ -7,17 +7,12 @@
   --extra-violet: rgb(57, 3, 68);
   --transition: all 0.5s ease-in-out;
   --fine-border: 1px solid rgb(212 212 210);
+  --button-border: 1px solid #bd37b3;
 
-  --fds-gray-00: #f5f6f7;
-  --fds-gray-05: #f2f3f5;
   --fds-gray-10: #ebedf0;
   --fds-gray-20: #dadde1;
   --fds-gray-25: #ccd0d5;
   --fds-gray-30: #bec3c9;
-  --fds-gray-45: #8d949e;
-  --fds-gray-70: #606770;
-  --fds-gray-80: #444950;
-  --fds-gray-90: #303338;
 }
 body {
   font-family: "Itim", cursive;
@@ -59,14 +54,22 @@ a:hover {
 .brand_button {
   background-color: var(--brand-color);
   color: white;
-  border-radius: 4px;
-  padding: 0 4px;
+  border-radius: 5px;
+  padding: 0 5px;
+  border: var(--button-border);
+  overflow: hidden;
+  box-shadow: 0 0.1rem 0.25rem var(--extra-violet) !important;
 }
 .brand_button:hover {
   color: var(--extra-violet);
+  transition: var(--transition);
 }
 .has-error label {
   color: red;
+}
+.hover_shadow:hover {
+  box-shadow: 0.125px 1px 5px var(--brand-color) !important;
+  padding-bottom: 1px;
 }
 /* header  */
 .header_full {
